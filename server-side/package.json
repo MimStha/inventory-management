@@ -4,8 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "nodemon ./bin/www",
+    "dev2": "ts-node-dev ./bin/www",
     "start": "ts-node ./bin/www",
-    "dev": "ts-node-dev ./bin/www"
+    "watch": "tsc -w"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -21,6 +23,7 @@
     "@types/http-errors": "^1.8.2",
     "@types/morgan": "^1.9.3",
     "nodemon": "^2.0.15",
-    "ts-node-dev": "^1.1.8"
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
   }
 }
